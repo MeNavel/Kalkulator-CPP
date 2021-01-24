@@ -8,10 +8,17 @@ float circle(int r){
     return area;
 }
 
+class bunderan
+{
+public:
+    float r;
+};
+
 //Progam Utama
 int main(){
     cout<<"Pilih Menu"<<endl;
     cout<<"1. Luas Lingkaran"<<endl;
+    cout<<"2. Keliling Lingkaran"<<endl;
     cout<<"Masukkan Pilihan : ";
     int menu;
     cin>>menu;
@@ -22,6 +29,14 @@ int main(){
         cin>>r;
         cout<<circle(r)<<endl;
     }
-
+    if(menu == 2){
+        cout<<"Masukkan Jari-Jari : ";
+        int jari; cin>>jari;
+        float keliling_lingkaran;
+        bunderan keliling;
+        keliling.r = jari;
+        keliling_lingkaran = 2*keliling.r*3.14;
+        cout<<keliling_lingkaran<<endl;
+    }
 
 }
