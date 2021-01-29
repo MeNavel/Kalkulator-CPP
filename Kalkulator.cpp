@@ -8,7 +8,7 @@ float circle(int r){
     return area;
 }
 
-class bunderan
+class a
 {
 public:
     float r;
@@ -33,7 +33,7 @@ int main(){
         cout<<"Masukkan Jari-Jari : ";
         int jari; cin>>jari;
         float keliling_lingkaran;
-        bunderan keliling;
+        a keliling;
         keliling.r = jari;
         keliling_lingkaran = 2*keliling.r*3.14;
         cout<<keliling_lingkaran<<endl;
